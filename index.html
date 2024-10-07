@@ -7,6 +7,7 @@
     <title>Suresh Pathlavath - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <script defer src="script.js"></script> <!-- Ensure your JS file is linked here -->
 </head>
 <body>
 
@@ -21,37 +22,56 @@
         <img src="https://ik.imagekit.io/suresh29/suresh_pathlavath%20.jpg" alt="Suresh Pathlavath Photo">
         <!-- Replace with actual photo URL when available -->
     </div>
-  <!-- About Me Section -->
-  <section id="about">
+
+<!-- About Me Section -->
+<section id="about">
     <h2 class="section-heading">About Me</h2>
     <div class="about-content">
         <p>I am a data analyst with over a year of experience in startups (SaaS) and as an Associate Solution Engineer at Brane Enterprises. My expertise lies in data analysis using tools such as SQL, Python, database management, Pandas, and Zoho Analytics Business Intelligence. I specialize in transforming data into insights and actionable solutions.</p>
 
-        <p>In my previous role, I extensively used SQL daily to create reports and dashboards. I also utilized Zoho Analytics, Ruby on Rails to embed reports, tested dashboard APIs with Postman, and worked with Grafana for time series data.</p>
+        <div id="more-info" style="display: none;">
+            <p>In my previous role, I extensively used SQL daily to create reports and dashboards. I also utilized Zoho Analytics, Ruby on Rails to embed reports, tested dashboard APIs with Postman, and worked with Grafana for time series data.</p>
 
-        <p>I graduated from the Institute of Eminence (IoE) tagged IIT Kharagpur in 2021 with a dual degree (BTech and MTech) in Biotechnology. Outside of work, I enjoy playing outdoor sports and reading newspapers, which I believe contribute to my growth as a professional and a well-rounded individual. I am always eager to learn new skills and technologies to enhance my data analysis capabilities.</p>
+            <p>I graduated from the Institute of Eminence (IoE) tagged IIT Kharagpur in 2021 with a dual degree (BTech and MTech) in Biotechnology. Outside of work, I enjoy playing outdoor sports and reading newspapers, which I believe contribute to my growth as a professional and a well-rounded individual. I am always eager to learn new skills and technologies to enhance my data analysis capabilities.</p>
 
-        <p>I am seeking opportunities to join a dynamic and innovative team where I can contribute to solving real-world problems with data.</p>
+            <p>I am seeking opportunities to join a dynamic and innovative team where I can contribute to solving real-world problems with data.</p>
+        </div>
+
+        <a href="#" id="read-more" onclick="toggleReadMore(event)">Read More</a>
     </div>
 </section>
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-heading">Experience</h2>
-        <div class="experience">
-            <div class="experience-item">
-                <h3>Associate Solution Engineer - Brane Group</h3>
-                <p>Contributed to the Grafix Project, developed data-driven applications, optimized database structures, and enhanced overall system performance and reliability.</p>
-                <p><strong>Duration:</strong> January 2024 - September 2024</p>
-            </div>
-            <div class="experience-item">
-                <h3>Product Analyst - Located.com (Haven Info Pvt. Ltd.)</h3>
-                <p>Executed ETL processes, worked with large datasets, and developed dashboards using Zoho Analytics and SQL, providing valuable insights for business intelligence.</p>
-                <p><strong>Duration:</strong> June 2021 - September 2022</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
+<!-- Experience Section -->
+<section id="experience">
+    <h2 class="section-heading">Experience</h2>
+    <div class="experience">
+
+        <div class="experience-item">
+            <h3>Associate Solution Engineer</h3>
+            <h4> Brane Group</h4>
+            <p><strong>Duration:</strong> January 2024 - September 2024</p> <br>
+
+            <p>
+                At Brane Group, played a key role in the Grafix Project, enhancing application performance for an Australian client while optimizing database functionality. Proficient in advanced Excel and SQL, adept at data analysis and reporting.
+            </p>
+            
+        </div>
+
+        <div class="experience-item">
+            <h3>Product Analyst</h3>
+            <h4>Located.com (Haven Info Pvt. Ltd.)</h4>
+            <p><strong>Duration:</strong> June 2021 - September 2022</p> <br>
+
+            <p>
+                Previously at Located.com, led ETL processes for over 5 million data rows with high accuracy and developed impactful dashboards in Zoho Analytics. Skilled in creating and testing dashboard APIs within Ruby on Rails, ensuring seamless integration and operation. Passionate about leveraging data to drive informed decision-making.
+            </p>
+            
+        </div>
+
+    </div>
+</section>
+<!-- 
+   
     <section id="projects">
         <h2 class="section-heading">Projects</h2>
         <div class="projects">
@@ -59,44 +79,58 @@
                 <h3>Grafix Project</h3>
                 <p>Key project for an Australian client, building an application for design managers and designers to track end-to-end project implementations, significantly improving workflow efficiency.</p>
             </div>
-            <div class="project">
-                <h3>ETL Automation System</h3>
-                <p>Automated data cleaning and transformation processes for over 5 million rows, achieving a 99% accuracy rate in data handling.</p>
-            </div>
+
         </div>
     </section>
 
-    <!-- Online Platforms Section -->
-    <section id="platforms">
-        <h2 class="section-heading">Online Platforms</h2>
-        <div class="platforms">
+  -->
+    
+<!-- Online Platforms Section -->
+<section id="platforms">
+    <h2 class="section-heading">Online Platforms</h2>
+    <div class="platforms">
+        <a href="https://github.com/suresh-pathlavath" class="platform-link" target="_blank">
             <div class="platform-item">
+                <img src="https://ik.imagekit.io/suresh29/icons/github_logo.svg" alt="GitHub" class="platform-icon">
                 <h3>GitHub</h3>
-                <p>Explore my repositories and projects on GitHub.</p>
-                <a href="https://github.com/suresh-pathlavath" target="_blank">Visit GitHub Profile</a>
             </div>
+        </a>
+        <a href="https://www.datacamp.com/profile/SureshPathlavath" class="platform-link" target="_blank">
             <div class="platform-item">
+                <img src="https://ik.imagekit.io/suresh29/icons/datacamp.svg" alt="DataCamp" class="platform-icon">
                 <h3>DataCamp</h3>
-                <p>View my completed courses and certifications on DataCamp.</p>
-                <a href="https://www.datacamp.com/profile/SureshPathlavath" target="_blank">Visit DataCamp Profile</a>
             </div>
+        </a>
+        <a href="https://platform.stratascratch.com/user/sureshpathlavath" class="platform-link" target="_blank">
             <div class="platform-item">
+                <img src="https://ik.imagekit.io/suresh29/icons/stratascratch.png" alt="StrataScratch" class="platform-icon">
                 <h3>StrataScratch</h3>
-                <p>Check out my data analysis work on StrataScratch.</p>
-                <a href="https://platform.stratascratch.com/user/sureshpathlavath" target="_blank">Visit StrataScratch Profile</a>
             </div>
+        </a>
+        <a href="https://www.hackerrank.com/sureshpathlavath" class="platform-link" target="_blank">
             <div class="platform-item">
-                <h3>LinkedIn</h3>
-                <p>Connect with me on LinkedIn to view my professional experience and updates.</p>
-                <a href="https://www.linkedin.com/in/sureshpathlavath" target="_blank">Visit LinkedIn Profile</a>
+                <img src="https://ik.imagekit.io/suresh29/icons/hackerrank.svg" alt="StrataScratch" class="platform-icon">
+                <h3>Hackerrank</h3>
             </div>
-        </div>
-    </section>
+        </a>        
+        <a href="https://www.linkedin.com/in/sureshpathlavath" class="platform-link" target="_blank">
+            <div class="platform-item">
+                <img src="https://ik.imagekit.io/suresh29/icons/linkedin.svg" alt="LinkedIn" class="platform-icon">
+                <h3>LinkedIn</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="below-online-para" >
+    <p> Above online platforms where I practiced real world problems using SQL, Excel, Python and other technologies whereever required </p>
+</section>
+
 
     <!-- Footer Section -->
     <footer>
         <p>Connect with me on <a href="https://linkedin.com/in/sureshpathlavath">LinkedIn</a> | <a href="mailto:sureshpathlavath.iitkgp@gmail.com">Email Me</a></p>
-        <p>&copy; 2024 Suresh Pathlavath. All rights reserved.</p>
+        <!-- <p>&copy; 2024 Suresh Pathlavath. All rights reserved.</p> -->
     </footer>
 
 </body>
