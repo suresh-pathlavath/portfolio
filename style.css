@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #2d2e32;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+
+
+/* Photo Section */
+.photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid transparent;
+    /* Premium Grey Gradient */
+    background-image: linear-gradient(white, white), linear-gradient(to right, #1a1a1a, #d3d3d3, #e0e0e0);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+
+
+/* About Me Section */
+#about {
+    padding: 60px 20px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.experience, .projects, .platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-item, .project, .platform-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover, .project:hover, .platform-item:hover {
+    transform: translateY(-10px);
+}
+
+.experience-item h3, .project h3, .platform-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.experience-item p, .project p, .platform-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #2d2e32;
+    color: white;
+}
+
+footer a {
+    color: #ffb400;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+}
