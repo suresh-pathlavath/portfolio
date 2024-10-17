@@ -336,3 +336,58 @@ footer p {
         width: 70%; /* Allow two certificates per row on medium/large screens */
     }
 }
+
+/* Education Section */
+#education {
+    padding: 60px 20px;
+}
+
+.education {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.education-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-10px);
+}
+
+.education-item h3, .education-item h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.coursework-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.coursework-list li {
+    background-color: #e0e0e0; /* Background color for coursework items */
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.coursework-list li:hover {
+    background-color: #c5d88d42; /* Darker color on hover */
+}
