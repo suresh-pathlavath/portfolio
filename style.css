@@ -328,6 +328,11 @@ footer p {
 
     .certificate-item {
         width: 90%; /* Ensure it fits nicely on small screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .certificate-title {
+        font-size: 1rem; /* Smaller font size for mobile */
     }
 }
 

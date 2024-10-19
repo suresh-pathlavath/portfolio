@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
     <script defer src="script.js"></script> <!-- Ensure your JS file is linked here -->
     <link rel="shortcut icon" type="image/jpg" href="https://ik.imagekit.io/suresh29/icons/personal%20page.svgs"/> <!-- fevicon-->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script> 
+
 
 </head>
 <body>
@@ -177,7 +179,11 @@
     <h2 class="section-heading">Certificates</h2>
     <div class="certificate-gallery">
         <div class="certificate-item">
-            <iframe src="https://ik.imagekit.io/suresh29/certificates/analytics_certificates.pdf" class="certificate-preview"></iframe>
+            
+            <div id="pdf-viewer">
+                <iframe src="https://ik.imagekit.io/suresh29/certificates/analytics_certificates.pdf" class="certificate-preview"></iframe>
+            </div>
+
         </div>
         <!-- Add more certificates as needed -->
     </div>
