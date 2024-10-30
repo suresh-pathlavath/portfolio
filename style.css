@@ -507,3 +507,30 @@ footer p {
     background-color: #c5d88d42; /* Darker color on hover */
 }
 
+.telugu-instruction-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.telugu-instruction-hover .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: rgb(40, 84, 87);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -110px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.telugu-instruction-hover:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
