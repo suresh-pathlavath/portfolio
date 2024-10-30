@@ -5,7 +5,7 @@ function toggleReadMore(event) {
 
     if (moreInfo.style.display === "none") {
         moreInfo.style.display = "block";
-        readMoreLink.textContent = "Read Less";
+        readMoreLink.textContent = "Show Less";
     } else {
         moreInfo.style.display = "none";
         readMoreLink.textContent = "Read More";
@@ -40,3 +40,6 @@ loadingTask.promise.then(pdf => {
     page.render(renderContext);
   });
 });
+
+
+// scroll to top 
