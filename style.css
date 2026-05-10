@@ -5,93 +5,161 @@
     font-family: 'Spectral', sans-serif;
 }
 
-/* navigation starts here */
-nav {
-    background-color: #0a0a09; /* Dark background */
-    color: white;
+/* Smooth scrolling for anchor links (e.g., clicking "About" in nav) */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Prevents the sticky nav from hiding section headers */
+}
+
+/* =========================================
+   Navigation Styles
+   ========================================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(10, 10, 9, 0.95); /* Dark transparent background */
+    backdrop-filter: blur(10px); /* Modern glassmorphism blur effect */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-    border-radius: 5px;
+    padding: 1rem 5%; /* 5% padding keeps it aligned nicely on wide screens */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .nav-list {
-    list-style: none; /* Remove default bullets */
-    display: flex; /* Horizontal layout */
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-}
-
-.nav-list li {
-    margin: 0 1rem; /* Spacing between items */
+    gap: 2rem; /* Clean spacing between links */
 }
 
 .nav-list li a {
-    color: white; /* White text */
-    text-decoration: none; /* Remove underline */
-    padding: 0.5rem 1rem; /* Add padding */
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 0.3rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Elegant Underline Hover Effect */
+.nav-list li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffb400; /* Matches your footer accent color */
+    transition: width 0.3s ease;
 }
 
 .nav-list li a:hover {
-    background-color: #444137; /* Darker background on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: #fff;
 }
 
-@media (max-width: 768px) {
-    .nav-list {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center align items */
-        padding: 1rem 0; /* Add padding */
-    }
-
-    .nav-list li {
-        margin: 0.5rem 0; /* Adjust margin for vertical layout */
-    }
+.nav-list li a:hover::after {
+    width: 100%;
 }
 
-/* Hamburger menu styles */
+/* Hamburger Menu Icon */
 .menu-toggle {
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
     cursor: pointer;
+    gap: 5px; /* Spaces out the bars cleanly */
 }
 
 .bar {
-    height: 4px;
+    height: 3px;
     width: 25px;
     background-color: white;
-    margin: 4px 0;
-    transition: 0.3s;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
+/* Mobile Responsive Setup */
+@media (max-width: 768px) {
     .nav-list {
-        display: none; /* Hide the menu by default */
-        flex-direction: column; /* Stack items vertically */
-        width: 100%; /* Full width */
-        background-color: #333; /* Background color for dropdown */
-        position: absolute; /* Position it absolutely */
-        top: 60px; /* Below the navbar */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
         left: 0;
-        padding: 1rem 0;
-        border-radius: 5px;
+        width: 100%;
+        background-color: rgba(10, 10, 9, 0.98);
+        padding: 0;
+        max-height: 0; /* Hidden by default for slide-down animation */
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        align-items: center;
+        gap: 0;
     }
 
     .nav-list.active {
-        display: flex; /* Show the menu when active */
+        max-height: 350px; /* Expands when hamburger is clicked */
+        padding: 1rem 0;
+        border-top: 1px solid #333;
+    }
+
+    .nav-list li {
+        margin: 15px 0;
     }
 
     .menu-toggle {
-        display: flex; /* Show hamburger icon */
+        display: flex;
     }
 }
+/* =========================================
+   Navigation Ends Here
+   ========================================= */
 
-/* navigation ends here */
+/* Brand Name and Subtitle */
+.nav-brand {
+    display: flex;
+    flex-direction: column; /* Stacks the name and subtitle */
+    justify-content: center;
+}
+
+.brand-name {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.brand-subtitle {
+    color: #b0b0b0; /* Subtle muted grey */
+    font-size: 0.75rem; /* Keeps it strictly as a sub-element */
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+    font-family: 'Spectral', sans-serif; /* Clean sans-serif for high readability at small sizes */
+}
+
+/* Mobile Adjustment for the long subtitle */
+@media (max-width: 768px) {
+    .brand-subtitle {
+        font-size: 0.65rem; /* Scales down slightly on phones */
+        max-width: 220px; /* Prevents it from pushing the hamburger menu off-screen */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Adds "..." if the screen is too narrow */
+    }
+}
 
 
 body {
@@ -153,8 +221,6 @@ header p {
     }
 }
 
-/* header ends here */
-
 /* Photo Section */
 .photo {
     display: flex;
@@ -182,13 +248,9 @@ header p {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }
 
-
-
 /* About Me Section */
-
 #about {
     padding: 60px 20px;
-    
 }
 
 .about-content {
@@ -202,8 +264,6 @@ header p {
     font-size: 1rem;
     line-height: 1.6;
 }
-
-/* About Me content End */
 
 #read-more {
     display: inline-block;
@@ -232,23 +292,13 @@ header p {
     color: #00060c; /* Darker shade on hover for effect */
 }
 
-
-/* about me end */
-
 .section-heading {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
 }
 
-
-.section-heading {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
-/* Expereince Section */
+/* Experience Section */
 #experience {
     position: relative;
     padding-left: 40px;
@@ -291,9 +341,6 @@ p {
     margin-bottom: 0;
 }
 
-
-/* Expereince Section */
-
 .experience, .projects {
     display: flex;
     flex-direction: column;
@@ -328,25 +375,6 @@ p {
     margin: 1rem;
     text-align: center;
 }
-
-footer {
-    text-align: center;
-    padding: 40px;
-    background-color: #2d2e32;
-    color: white;
-}
-
-footer a {
-    color: #ffb400;
-    text-decoration: none;
-}
-
-footer p {
-    margin-top: 20px;
-}
-
-
-/* Platform section */
 
 /* Online Platforms Section */
 .platforms {
@@ -386,7 +414,6 @@ footer p {
     font-size: 1rem;
     color: #333;
 }
-
 
 /* pdf Certificates Section */
 #certificates {
@@ -642,4 +669,20 @@ footer p {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #2d2e32;
+    color: white;
+}
+
+footer a {
+    color: #ffb400;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
 }

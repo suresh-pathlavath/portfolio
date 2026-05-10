@@ -6,291 +6,282 @@
     <meta name="description" content="Portfolio of Suresh Pathlavath">
     <title>Suresh Pathlavath - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
-    <script defer src="script.js"></script> <!-- Ensure your JS file is linked here -->
-    <link rel="shortcut icon" type="image/jpg" href="https://ik.imagekit.io/suresh29/icons/person.svg?updatedAt=1730302420416"/> <!-- fevicon-->
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script> 
+    <link rel="stylesheet" href="style.css"> <script defer src="script.js"></script> <link rel="shortcut icon" type="image/jpg" href="https://ik.imagekit.io/suresh29/icons/person.svg?updatedAt=1730302420416"/> <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
-<nav>
-    <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-    <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-    </ul>
 
-</nav>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navList = document.querySelector('.nav-list');
-
-    mobileMenu.addEventListener('click', () => {
-        navList.classList.toggle('active');
-    });
-});
-
-</script>
 <body>
 
-    <!-- Header Section -->
-    <header>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- <header>
         <h1>Suresh Pathlavath</h1>
         <p>Analyst | IIT Kharagpur </p>
-    </header>
-    <!-- Photo Section -->
+    </header> -->
+    
     <div class="photo">
         <img src="https://ik.imagekit.io/suresh29/suresh_pathlavath%20.jpg" alt="Suresh Pathlavath Photo">
-        <!-- Replace with actual photo URL when available -->
     </div>
-    
 
-<!-- About Me Section -->
-<section id="about">
-    <h2 class="section-heading">About Me</h2>
-    <div class="about-content">
-        <p>I am Analyst with experience in building high-performance data pipelines and scalable analytics solutions. I specialize in processing large-scale datasets (200M+ records, 100+ GB) using Python (Polars, Pandas), SQL, and Parquet, delivering time-sensitive insights through Power BI dashboards. My focus is on automation, performance optimization, and building reliable data systems that directly support business decisions.</p>
+    <section id="about">
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-content">
+            <p>I am an Analyst with experience in building high-performance data pipelines and scalable analytics solutions. I specialize in processing large-scale datasets (200M+ records, 100+ GB) using Python (Polars, Pandas), SQL, and Parquet, delivering time-sensitive insights through Power BI dashboards. My focus is on automation, performance optimization, and building reliable data systems that directly support business decisions.</p>
 
-        <div id="more-info" style="display: none;">
-            <p>In my current role, I design and automate end-to-end workflows integrating Google Sheets, Apps Script, SQL, Parquet, and Windows batch processes. I have built proactive alerting systems and automated reporting frameworks to monitor in-stock, sales, liquidation, and critical operational metrics hourly during BAU and peak seasons.</p>
-            
-            <p>Previously, I worked on dashboard development using Zoho Analytics, tested APIs with Postman, and embedded reports into a Ruby on Rails application. I also contributed to a low-code/no-code solution for an Australian client as part of the Grafix project.</p>
-            
-            <p>I hold a dual degree (B.Tech + M.Tech) from IIT Kharagpur. I enjoy working at the intersection of performance engineering and analytics, constantly exploring better tools and approaches to make data processing faster, cleaner, and more scalable.</p>
+            <div id="more-info" style="display: none;">
+                <p>In my current role, I design and automate end-to-end workflows integrating Google Sheets, Apps Script, SQL, Parquet, and Windows batch processes. I have built proactive alerting systems and automated reporting frameworks to monitor in-stock, sales, liquidation, and critical operational metrics hourly during BAU and peak seasons.</p>
+                
+                <p>Previously, I worked on dashboard development using Zoho Analytics, tested APIs with Postman, and embedded reports into a Ruby on Rails application. I also contributed to a low-code/no-code solution for an Australian client as part of the Grafix project.</p>
+                
+                <p>I hold a dual degree (B.Tech + M.Tech) from IIT Kharagpur. I enjoy working at the intersection of performance engineering and analytics, constantly exploring better tools and approaches to make data processing faster, cleaner, and more scalable.</p>
+            </div>
+
+            <a href="#" id="read-more" onclick="toggleReadMore(event)">Show More</a>
         </div>
+    </section>
 
-        <a href="#" id="read-more" onclick="toggleReadMore(event)">Show More</a>
-    </div>
-</section>
+    <section id="experience">
+        <h2 class="section-heading">Experience</h2>
+        <div class="experience">
 
-<!-- Experience Section -->
-<section id="experience">
-    <h2 class="section-heading">Experience</h2>
-    <div class="experience">
+            <div class="experience-item">
+                <h3>Assistant Manager</h3>
+                <h4> Flipkart Pvt. Ltd.</h4>
+                <h5> Team: Flipkart Minutes - Planning</h5>
+                <p><strong>Duration:</strong> December 2024 - Present</p> <br>
 
-        <div class="experience-item">
-            <h3>Assistant Manager</h3>
-            <h4> Flipkart Pvt. Ltd.</h4>
-            <h5> Team: Flipkart Minutes - Planning</h5>
-            <p><strong>Duration:</strong> December 2024 - Present</p> <br>
+                <ul style="margin-left: 20px; line-height: 1.6; color: #555;">
+                    <li style="margin-bottom: 10px;">
+                        Processed large-scale inventory and sales datasets (100+ million records) on a Nutanix virtual server using Polars (scalable and time-sensitive tasks), Pandas, and Parquet, with outputs integrated into Power BI dashboards. Automated workflows using Google Sheets, Apps Script, Excel, and Windows batch scripts to support timely and data-driven decision-making.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        Built scalable scripts efficiently processing 100+ GBs of data within a few minutes (sometimes less than 10 minutes) for time-sensitive critical dashboards.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        Built alert email systems for proactively monitoring scripts to prevent failures and minimize the impact on business and workflows. Automated high-level emails to monitor in-stock, liquidation, and other critical metrics hourly to assess business performance for BAU and festive seasons.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        Automated manual and repetitive tasks using Google Apps Script and Pandas, leading to decreased processing time and lower operational costs.
+                    </li>
+                    <li>
+                        Developed Power BI dashboards for In-stock, Sales, Liquidation, Expiry, and other metrics, integrating data from Flipkart Data Platform, SQL queries, Google Sheets, Parquet and other sources to support informed decision-making.
+                    </li>
+                </ul>
+            </div>
 
-            <p>
-                <li>
-                    Processed large-scale inventory,sales datasets (100+ million records) on a Nutanix virtual server using Polars(scalable and time-sensitive tasks), Pandas, and Parquet, with outputs integrated into Power BI dashboards. Automated workflows using Google Sheets, Apps Script, Excel, and Windows batch scripts to support timely and data-driven decision-making.
-                </li>
-                <li>
-                    Built scalable scripts efficiently processing 100+ GBs of data within a few minutes (sometimes less than 10 minutes) for time-sensitive critical dashboards.
-                </li>
-                <li>
-                    Built alert email systems for proactively monitoring scripts to prevent script failures to minimize the impact on business and workflows. Automated high-level emails to monitor in-stock, liquidation, and other critical metrics hourly to assess business performance for BAU(Business As Usual) and festive seasons
-                </li>
-                <li>
-                    Automated manual and repetitive tasks using Google Apps Script and Pandas, leading to decreased processing time and lower operational costs.
-                </li>
-                <li>
-                    Developed Power BI dashboards for In-stock, Sales, Liquidation, Expiry, and other metrics, integrating data from Flipkart Data Platform, SQL queries, Google Sheets, Parquet and other sources to support informed decision-making.
-                </li>
-            </p>
+            <div class="experience-item">
+                <h3>Associate Solution Engineer</h3>
+                <h4> Brane Group</h4>
+                <p><strong>Duration:</strong> January 2024 - September 2024</p> <br>
+
+                <p>
+                    Worked on a low-code/no-code platform to build solutions for an Australian client on the Grafix project.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Product Analyst</h3>
+                <h4>Located.com (Haven Info Pvt. Ltd.)</h4>
+                <p><strong>Duration:</strong> June 2021 - September 2022</p> <br>
+
+                <p>
+                    Built dashboards and reports on the Zoho Analytics platform, tested dashboard APIs using Postman, and embedded them into a Ruby on Rails application.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="platforms">
+        <h2 class="section-heading">Online Platforms</h2>
+        <div class="platforms">
+            <a href="https://github.com/suresh-pathlavath" class="platform-link" target="_blank">
+                <div class="platform-item">
+                    <img src="https://ik.imagekit.io/suresh29/icons/github_logo.svg" alt="GitHub" class="platform-icon">
+                    <h3>GitHub</h3>
+                </div>
+            </a>
+            <a href="https://www.datacamp.com/profile/SureshPathlavath" class="platform-link" target="_blank">
+                <div class="platform-item">
+                    <img src="https://ik.imagekit.io/suresh29/icons/datacamp.svg" alt="DataCamp" class="platform-icon">
+                    <h3>DataCamp</h3>
+                </div>
+            </a>
+            <a href="https://platform.stratascratch.com/user/sureshpathlavath" class="platform-link" target="_blank">
+                <div class="platform-item">
+                    <img src="https://ik.imagekit.io/suresh29/icons/stratascratch.png" alt="StrataScratch" class="platform-icon">
+                    <h3>StrataScratch</h3>
+                </div>
+            </a>
+            <a href="https://www.hackerrank.com/sureshpathlavath" class="platform-link" target="_blank">
+                <div class="platform-item">
+                    <img src="https://ik.imagekit.io/suresh29/icons/hackerrank.svg" alt="Hackerrank" class="platform-icon">
+                    <h3>Hackerrank</h3>
+                </div>
+            </a>        
+            <a href="https://www.linkedin.com/in/sureshpathlavath" class="platform-link" target="_blank">
+                <div class="platform-item">
+                    <img src="https://ik.imagekit.io/suresh29/icons/linkedin.svg" alt="LinkedIn" class="platform-icon">
+                    <h3>LinkedIn</h3>
+                </div>
+            </a>
+            <a href="https://www.coursera.org/user/0ebe94b4e5e26977771afe0987b909e3" class="platform-link" target="_blank">
+                <div class="platform-item">
+                    <img src="https://ik.imagekit.io/suresh29/icons/coursera.svg" alt="Coursera" class="platform-icon">
+                    <h3>Coursera</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="below-online-para">
+        <p>On these online platforms, I practiced 1,000+ real-world problems & courses using SQL, Excel, Python, and other necessary technologies wherever needed.</p>
+    </section>
+
+    <section id="education">
+        <h2 class="section-heading">Education</h2>
+        <div class="education">
+
+            <div class="education-item">
+                <h3>Indian Institute of Technology, Kharagpur</h3>
+                <h4>Dual Degree (BTech + MTech) in Biotechnology</h4>
+                <p><strong>Graduation Year:</strong> 2021</p>
+                <p><strong>Relevant Coursework:</strong></p>
+                <ul class="coursework-list">
+                    <li>Probability & Statistics</li>
+                    <li>Programming and Data Structures</li>
+                    <li>Mathematics</li>
+                    <li>Bioinformatics</li>
+                    <li>Economics</li>
+                    <li>Financial and Legal Aspects of Business</li>
+                    <li>Financial Institutions and Markets</li>
+                    <li>Investment Management</li>
+                    <li>Partial Differential Equations</li>
+                    <li>Immunology</li>
+                    <li>Protein Engineering</li>
+                    <li>Tropical Meteorology</li>
+                    <li>Disaster Management</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3>S.R.M. Junior College Hyderabad</h3>
+                <p><strong>Percentage:</strong> 93.1%</p>
+                <p><strong>Relevant Coursework:</strong></p>
+                <ul class="coursework-list">
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>            
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3>Arabindo High School, Amangal Rangareddy</h3>
+                <p>
+                    <span class="telugu-instruction-hover">
+                        <strong>Medium of Instructions: </strong>Telugu
+                        <span class="tooltiptext">The primary language of instructions at my school.</span>
+                    </span>
+                </p>
+                <p><strong>GPA:</strong> 9.8/10</p>
+            </div>
             
         </div>
+    </section>
 
-        <div class="experience-item">
-            <h3>Associate Solution Engineer</h3>
-            <h4> Brane Group</h4>
-            <p><strong>Duration:</strong> January 2024 - September 2024</p> <br>
-
-            <p>
-                Worked on a low-code/no-code platform to build solutions for an Australian client on the Grafix project.
-            </p>
-            
-        </div>
-
-        <div class="experience-item">
-            <h3>Product Analyst</h3>
-            <h4>Located.com (Haven Info Pvt. Ltd.)</h4>
-            <p><strong>Duration:</strong> June 2021 - September 2022</p> <br>
-
-            <p>
-                Built dashboards and reports on the Zoho Analytics platform, tested dashboard APIs using Postman, and embedded them into a Ruby on Rails application.
-            </p>
-            
-        </div>
-
-    </div>
-</section>
-<!-- Online Platforms Section -->
-<section id="platforms">
-    <h2 class="section-heading">Online Platforms</h2>
-    <div class="platforms">
-        <a href="https://github.com/suresh-pathlavath" class="platform-link" target="_blank">
-            <div class="platform-item">
-                <img src="https://ik.imagekit.io/suresh29/icons/github_logo.svg" alt="GitHub" class="platform-icon">
-                <h3>GitHub</h3>
-            </div>
-        </a>
-        <a href="https://www.datacamp.com/profile/SureshPathlavath" class="platform-link" target="_blank">
-            <div class="platform-item">
-                <img src="https://ik.imagekit.io/suresh29/icons/datacamp.svg" alt="DataCamp" class="platform-icon">
-                <h3>DataCamp</h3>
-            </div>
-        </a>
-        <a href="https://platform.stratascratch.com/user/sureshpathlavath" class="platform-link" target="_blank">
-            <div class="platform-item">
-                <img src="https://ik.imagekit.io/suresh29/icons/stratascratch.png" alt="StrataScratch" class="platform-icon">
-                <h3>StrataScratch</h3>
-            </div>
-        </a>
-        <a href="https://www.hackerrank.com/sureshpathlavath" class="platform-link" target="_blank">
-            <div class="platform-item">
-                <img src="https://ik.imagekit.io/suresh29/icons/hackerrank.svg" alt="StrataScratch" class="platform-icon">
-                <h3>Hackerrank</h3>
-            </div>
-        </a>        
-        <a href="https://www.linkedin.com/in/sureshpathlavath" class="platform-link" target="_blank">
-            <div class="platform-item">
-                <img src="https://ik.imagekit.io/suresh29/icons/linkedin.svg" alt="LinkedIn" class="platform-icon">
-                <h3>LinkedIn</h3>
-            </div>
-        </a>
-        <a href="https://www.coursera.org/user/0ebe94b4e5e26977771afe0987b909e3" class="platform-link" target="_blank">
-            <div class="platform-item">
-                <img src="https://ik.imagekit.io/suresh29/icons/coursera.svg" alt="Coursera" class="platform-icon">
-                <h3>Coursera</h3>
-            </div>
-        </a>
+    <section id="bookshelf">
+        <h2 class="section-heading">Bookshelf</h2>
         
-    </div>
-</section>
-<section class="below-online-para" >
-    <p> On these online platforms, I practiced 1,000+ real-world problems & courses using SQL, Excel, Python, and other necessary technologies wherever needed </p>
-</section>
+        <div class="bookshelf-grid">
+            <a href="books.html#ddia" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/designing_data_intensive_application.jpg" alt="Designing Data-Intensive Applications">
+                    </div>
+                    <div class="book-info">
+                        <h3>Designing Data-Intensive Applications</h3>
+                        <p class="author">Martin Kleppmann</p>
+                        <span class="tag">Engineering</span>
+                    </div>
+                </div>
+            </a>
 
+            <a href="books.html#steve-jobs" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/steve_jobs_by_walter_isaacson.jpg" alt="Steve Jobs by Walter Isaacson">
+                    </div>
+                    <div class="book-info">
+                        <h3>Steve Jobs</h3>
+                        <p class="author">Walter Isaacson</p>
+                        <span class="tag">Biography</span>
+                    </div>
+                </div>
+            </a>
 
-<!-- Education Section -->
-<section id="education">
-    <h2 class="section-heading">Education</h2>
-    <div class="education">
-
-        <div class="education-item">
-            <h3>Indian Institute of Technology, Kharagpur</h3>
-            <h4>Dual Degree (BTech + MTech) in Biotechnology</h4>
-            <p><strong>Graduation Year:</strong> 2021</p>
-            <p><strong>Relevant Coursework:</strong></p>
-            <ul class="coursework-list">
-                <li>Probability & Statistics</li>
-                <li>Programming and Data Structures</li>
-                <li>Mathematics</li>
-                <li>Bioinformatics</li>
-                <li>Economics</li>
-                <li>Financial and Legal Aspects of Business</li>
-                <li>Financial Institutions and Markets</li>
-                <li>Investment Management</li>
-                <li>Partial Differential Equations</li>
-                <li>Immunology</li>
-                <li>Protein Engineering</li>
-                <li>Tropical Meteorology</li>
-                <li>Disaster Management</li>
-
-            </ul>
+            <a href="books.html#effective-engineer" class="book-card-link">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/effective_engineer_edmond_lau.jpg" alt="The Effective Engineer">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Effective Engineer</h3>
+                        <p class="author">Edmond Lau</p>
+                        <span class="tag">Technology</span>
+                    </div>
+                </div>
+            </a>
         </div>
 
-        <div class="education-item">
-            <h3>S.R.M. Junior College Hyderabad</h3>
-            <p><strong>Percentage:</strong>93.1%</p>
-            <p><strong>Relevant Coursework:</strong></p>
-            <ul class="coursework-list">
-                <li>Mathematics</li>
-                <li>Physics</li>
-                <li>Chemistry</li>            
-            </ul>
+        <div class="view-all-container">
+            <p>Explore more technical deep-dives and personal reflections.</p>
+            <a href="books.html" class="view-all-btn">View Full Library & Summaries →</a>
         </div>
-        <div class="education-item">
-            <h3>Arabindo High School, Amangal Rangareddy</h3>
-            <p>
-                <span class="telugu-instruction-hover">
-                    <strong>Medium of Instructions: </strong>Telugu
-                    <span class="tooltiptext">The primary language of instructions at my school.</span>
-                </span>
-            </p>
-            <p><strong>GPA:</strong> 9.8/10</p>
-        </div>
-        
+    </section>
 
-    </div>
-</section>
-
-<section id="bookshelf">
-    <h2 class="section-heading">Bookshelf</h2>
-    
-    <div class="bookshelf-grid">
-        <a href="books.html#ddia" class="book-card-link">
-            <div class="book-card">
-                <div class="book-cover">
-                    <img src="assets/images/designing_data_intensive_application.jpg" alt="Designing Data-Intensive Applications">
-                </div>
-                <div class="book-info">
-                    <h3>Designing Data-Intensive Applications</h3>
-                    <p class="author">Martin Kleppmann</p>
-                    <span class="tag">Engineering</span>
+    <section id="certificates">
+        <h2 class="section-heading">Certificates</h2>
+        <div class="certificate-gallery">
+            <div class="certificate-item">
+                <div id="pdf-viewer">
+                    <iframe src="https://ik.imagekit.io/suresh29/certificates/analytics_certificates.pdf" class="certificate-preview"></iframe>
                 </div>
             </div>
-        </a>
+        </div>    
+    </section>
 
-        <a href="books.html#steve-jobs" class="book-card-link">
-            <div class="book-card">
-                <div class="book-cover">
-                    <img src="assets/images/steve_jobs_by_walter_isaacson.jpg" alt="Steve Jobs by Walter Isaacson">
-                </div>
-                <div class="book-info">
-                    <h3>Steve Jobs</h3>
-                    <p class="author">Walter Isaacson</p>
-                    <span class="tag">Biography</span>
-                </div>
-            </div>
-        </a>
-
-        <a href="books.html#effective-engineer" class="book-card-link">
-            <div class="book-card">
-                <div class="book-cover">
-                    <img src="assets/images/effective_engineer_edmond_lau.jpg" alt="The Effective Engineer">
-                </div>
-                <div class="book-info">
-                    <h3>The Effective Engineer</h3>
-                    <p class="author">Edmond Lau</p>
-                    <span class="tag">Technology</span>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="view-all-container">
-        <p>Explore more technical deep-dives and personal reflections.</p>
-        <a href="books.html" class="view-all-btn">View Full Library & Summaries →</a>
-    </div>
-</section>
-<!-- Certificates documents -->
- <section id="certificates">
-    <h2 class="section-heading">Certificates</h2>
-    <div class="certificate-gallery">
-        <div class="certificate-item">
-            <div id="pdf-viewer">
-                <iframe src="https://ik.imagekit.io/suresh29/certificates/analytics_certificates.pdf" class="certificate-preview"></iframe>
-            </div>
-
-        </div>
-        <!-- Add more certificates as needed -->
-    </div>    
- 
-</section>
-    <!-- Footer Section -->
     <footer>
         <p>Connect with me on <a href="https://linkedin.com/in/sureshpathlavath">LinkedIn</a> | <a href="mailto:sureshpathlavath.iitkgp@gmail.com">Email Me</a></p>
-        <!-- <p>&copy; 2024 Suresh Pathlavath. All rights reserved.</p> -->
     </footer>
 
 </body>

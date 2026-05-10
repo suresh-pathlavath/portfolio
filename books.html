@@ -10,13 +10,36 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Suresh Pathlavath</a>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
         <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
     <main class="library-container">
         <header class="library-header">
             <h1 class="section-heading">Finished Books</h1>
@@ -93,14 +116,55 @@
             
             <div class="archive-list-container">
                 <ul class="simple-book-list">
-                    <li><span class="book-title-simple">Happier</span><span class="book-author-simple">Tal Ben-Shahar</span></li>
-                    <li><span class="book-title-simple">Atomic Habits</span><span class="book-author-simple">James Clear</span></li>
-                    <li><span class="book-title-simple">Your Brain at Work</span><span class="book-author-simple">David Rock</span></li>
-                    <li><span class="book-title-simple">Deep Work</span><span class="book-author-simple">Cal Newport</span></li>
-                    <li><span class="book-title-simple">Flow</span><span class="book-author-simple">Mihaly Csikszentmihalyi</span></li>
-                    <li><span class="book-title-simple">Tiny Experiments</span><span class="book-author-simple">Anne-Laure Le Cunff</span></li>
-                    <li><span class="book-title-simple">The Art of Loving</span><span class="book-author-simple">Erich Fromm</span></li>
-                    <li><span class="book-title-simple">The 5 Types of Wealth</span><span class="book-author-simple">Sahil Bloom</span></li>
+                    <li>
+                        <a href="happier_annotations.html" class="archive-link">
+                            <span class="book-title-simple">Happier</span>
+                            <span class="book-author-simple">Tal Ben-Shahar</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <div class="archive-no-link">
+                            <span class="book-title-simple">Atomic Habits</span>
+                            <span class="book-author-simple">James Clear</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="archive-no-link">
+                            <span class="book-title-simple">Your Brain at Work</span>
+                            <span class="book-author-simple">David Rock</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="archive-no-link">
+                            <span class="book-title-simple">Deep Work</span>
+                            <span class="book-author-simple">Cal Newport</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="archive-no-link">
+                            <span class="book-title-simple">Flow</span>
+                            <span class="book-author-simple">Mihaly Csikszentmihalyi</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="archive-no-link">
+                            <span class="book-title-simple">Tiny Experiments</span>
+                            <span class="book-author-simple">Anne-Laure Le Cunff</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="archive-no-link">
+                            <span class="book-title-simple">The Art of Loving</span>
+                            <span class="book-author-simple">Erich Fromm</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="archive-no-link">
+                            <span class="book-title-simple">The 5 Types of Wealth</span>
+                            <span class="book-author-simple">Sahil Bloom</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>

@@ -3,44 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blog_style.css">
+    <title>Blog - Suresh Pathlavath</title>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/jpg" href="https://ik.imagekit.io/suresh29/icons/blog.svg?updatedAt=1730302887130"/> <!-- fevicon-->
-    <title>Blog</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="blog_style.css">
+    
+    <link rel="shortcut icon" type="image/jpg" href="https://ik.imagekit.io/suresh29/icons/blog.svg?updatedAt=1730302887130"/>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Analytics</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" title="To Redirect To Portfolio Main Page">Back to Home</a></li>
-            </ul>
-        </nav>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
         
-    </header>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
 
     <main class="blog-container">
+        
+        <header style="text-align: center; margin-bottom: 50px;">
+            <h1 class="section-heading" style="margin-bottom: 10px;">Welcome to Analytics</h1>
+            <p style="color: #666; font-style: italic; font-family: 'Spectral', serif;">Exploring data-driven decisions, SQL optimization, and performance engineering.</p>
+        </header>
+
         <article class="blog-post">
             <header>
                 <h2>Delivery Distance and Time</h2>
                 <time datetime="2024-10-29">October 29, 2024</time>
             </header>
+            
             <p>In this post, I'll explain how data-driven decisions can solve problems using SQL.</p>
+            
             <ul>
-                <li><a href="delivery_efficiency.html" title="Want to read more click here">How can we improve delivery efficiency using data? Click here to read more..</a></li>
+                <li>
+                    <a href="delivery_efficiency.html" title="Want to read more click here">
+                        How can we improve delivery efficiency using data? Click here to read more →
+                    </a>
+                </li>
             </ul>            
         </article>
-        <!-- Add more blog posts as needed -->
-    </main>
+        
+        </main>
     
-    <div>
-        <a href="index.html" class="btn back-button">Back to Home</a>
-    </div>
-    <footer>
-        <div class="footer-bottom">
-            <p>Thanks and Visit Again</p>
-        </div>
-    </footer>
+    <!-- <div style="text-align: center; margin-bottom: 40px;">
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </div> -->
+
+    <!-- <footer>
+        <p>Connect with me on <a href="https://linkedin.com/in/sureshpathlavath">LinkedIn</a> | <a href="mailto:sureshpathlavath.iitkgp@gmail.com">Email Me</a></p>
+    </footer> -->
 
 </body>
 </html>

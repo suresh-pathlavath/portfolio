@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happier Annotations - Suresh Pathlavath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="books_style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <main class="library-container">
+        <!-- <header class="library-header">
+            <h1 class="section-heading">Reading Annotations</h1>
+            <a href="books.html" class="back-link">← Back to Full Library</a>
+        </header> -->
+
+        <section class="annotation-card">
+            <div class="annotation-header">
+                <h2 class="book-title">Happier</h2>
+                <p class="book-author">by Tal Ben-Shahar</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Raw highlights, quotes, and notes captured while reading.</p>
+            </div>
+            
+            <div class="annotation-content">
+                <ul class="highlight-list">
+                    <li>Becoming happier is a lifelong pursuit.</li>
+                    <li>Instead of focusing on cultivating self-discipline as a means toward change, we need to introduce rituals. According to Loehr and Schwartz, "Building rituals requires defining very precise behaviours and performing them at very specific times – motivated by deeply held values."</li>
+                    <li>Incremental change is better than ambitious failure … success feeds on itself.</li>
+                    <li>Habits in general are difficult to get rid of – and that's a good thing when good habits are concerned.</li>
+                    <li>Expressing gratitude together can contribute in a meaningful way to the relationship.</li>
+                    <li>Society rewards results, not processes; arrivals, not journeys.</li>
+                    <li>The best moments usually occur when a person’s body or mind is stretched to its limits in a voluntary effort to accomplish something difficult and worthwhile.</li>
+                    <li>In every life some mundane work is unavoidable.</li>
+                    <li>Numerous studies show that happy individuals are successful across multiple life domains, including marriage, friendship, income, work, performance, and health.</li>
+                    <li>A happy person enjoys positive emotions while perceiving her life as purposeful. Because emotion is the foundation of motivation, it naturally plays a central role in our motivation to pursue happiness.</li>
+                    <li>In fact, unrealistic expectation of a constant high will inevitably lead to disappointment and feelings of inadequacy and hence negative emotions.</li>
+                    <li>To live a meaningful life, we must have a self-generated purpose that possesses personal significance rather than one that is dictated by society’s standards. The shift from being a rat racer to pursuing happiness is not about working less or with less fervor but about working as hard or harder at the right activities – those that are a source of both present and future benefit.</li>
+                    <li>When we derive a sense of purpose from what we do, our experience of pleasure is intensified; and taking pleasure in an activity can make our experience of it all the more meaningful.</li>
+                    <li>Lasagna principle – the notion that our capacity to enjoy different activities is limited and unique. Identifying the right activity, and then the right quantity for each activity, leads to the highest quality of life.</li>
+                    <li>Cannot choose wisely for a life unless he dares to listen to himself, his own self, at each moment in life.</li>
+                    <li>We have to listen, really listen, to our hearts and minds — our emotions and our reason. We can then evaluate our lives through the lens of happiness and decide to add more meaningful and pleasurable experiences.</li>
+                    <li>Collins’s experience provides an insight into the implications of recognizing happiness as the ultimate end.</li>
+                    <li>In thinking about our lives, it may be helpful to think of positive experiences as income and negative ones as expenses.</li>
+                    <li>In fact, today I believe that goals are indispensable to a happy life — to be happy, we need to identify and pursue goals that are both pleasurable and meaningful.</li>
+                    <li>Whatever you can do, or dream you can, begin it! Boldness has genius, magic.</li>
+                    <li>Kennon Sheldon and his colleagues write, “People seeking greater well-being would be well advised to focus on the pursuit of: 1. goals involving growth, connection, and contribution rather than goals involving money, beauty, and popularity and 2. Goals that are interesting and personally important to them rather than goals they feel forced or pressured to pursue."</li>
+                    <li>Increasing the base level of our well-being, is to reduce the have-tos while increasing the want-tos, in terms of general life pursuits as well as daily activities.</li>
+                    <li>How happy I am depends to a large degree on the ratio between want-tos and have-tos in my life.</li>
+                    <li>Life is short. In choosing a path make sure you first identify those things that you can do. Out of those, select the ones that you want to do. Then, reduce your choice further by zooming in on what you really want to do. Finally, select those things that you really, really want to do — then do them. "What I had done was to create four concentric circles for me, with the inner circle holding in it the pursuits that would make me happiest."</li>
+                    <li>That if you do follow your bliss you put yourself on a kind of track that has been there all the while, waiting for you, and the life that you ought to be living is the one you are living.</li>
+                    <li>People who articulate and pursue self-concordant goals are generally both happier and more successful.</li>
+                    <li>We reach this zone when our activities provide an appropriate level of challenge, when the task at hand is neither too difficult nor too easy.</li>
+                    <li>Struggles and hardships and challenges are a necessary component of an emotionally rich life; a struggle-free life is not always the best thing for us.</li>
+                    <li>First, the work should draw out a variety of talents and skills, second, the employee should complete a whole, from beginning to end, rather than play a minor role in the big picture; finally, the employee should feel that her work has a significant impact on others. A manager who designs work that meets these conditions is likely to increase her employees' profits in the ultimate currency.</li>
+                    <li>We often perform best at the things that we find most engaging; pursuing those activities that provide us meaning and pleasure could actually lead to more quantifiable success.</li>
+                    <li>We naturally work harder at the things that we care about and are interested in — that we are passionate about. Without passion, motivation wanes; with passion, motivation increases, and, over time so does ability.</li>
+                    <li>For a person experiencing his work as a calling, work is an end in itself. While the paycheck is certainly important and advancement is, too, he primarily works because he wants to. He is motivated by intrinsic reasons and experiences a sense of personal fulfillment; his goals are self-concordant. He is passionate about what he does and derives personal fulfillment from his work; he perceives it as a privilege rather than a chore.</li>
+                    <li>Questions such as “What am I good at?” are, of course, important in selecting our path, but we must ask them only after we have identified what gives us meaning and pleasure.</li>
+                    <li>When it comes to generating the ultimate currency, how we perceive the work can matter more than the work itself.</li>
+                    <li>Short of a life-changing move, one way of enhancing the quality of our lives is to introduce new activities that are meaningful and pleasurable and that we are good at.</li>
+                    <li>Unconditional love creates a parallel circle of happiness — in which we are encouraged to pursue those things that are meaningful and pleasurable for us. We experience the freedom to follow our passions — whether in art, banking, teaching, or gardening — regardless of prestige or success. Unconditional love is the foundation of a happy relationship.</li>
+                    <li>Focusing on meaningful and pleasurable experiences — in the past and the present — fortifies the connection and improves the relationship overall.</li>
+                    <li>Contributing to other people's happiness provides us with meaning and pleasure, which is why helping others is one of the essential components of a happy life.</li>
+                    <li>We often enhance our happiness to the greatest extent when we pursue activities that provide us with meaning and pleasure and that help others.</li>
+                    <li>Those people who can identify sets of goals that well represent their implicit interests and values are indeed able to function more efficiently, flexibly, and integratively across all areas of their lives.</li>
+                    <li>If you’re doing it with others, take turns telling one another what has made you happier in the past — ten years ago, last month, or earlier today.</li>
+                    <li>Peak experience (enjoying ourselves) and peak performance (doing our best) go hand in hand to happier — life is rarely shaped by some extraordinary life-changing event; rather, it is shaped incrementally, experience by experience, moment by moment.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

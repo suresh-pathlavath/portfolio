@@ -186,3 +186,110 @@ html {
         grid-template-columns: 1fr;
     }
 }
+
+/* Styling for linked archive items */
+.archive-link {
+    text-decoration: none;
+    display: block; /* Makes the entire block clickable */
+    transition: transform 0.2s ease;
+}
+
+.archive-no-link {
+    display: block;
+}
+
+/* Interactive hover effect */
+.archive-link:hover {
+    transform: translateX(5px); /* Subtle slide effect indicating it's clickable */
+}
+
+.archive-link:hover .book-title-simple {
+    color: #555; /* Slightly changes text color on hover */
+    text-decoration: underline; /* Clear visual cue that notes exist */
+    text-decoration-color: #ccc;
+}
+
+/* Ensure typography remains consistent for both linked and unlinked items */
+.book-title-simple {
+    display: block;
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.book-author-simple {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* =========================================
+   6. Individual Annotation Page Styles 
+   ========================================= */
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-family: 'Spectral', serif;
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.annotation-card {
+    background: #fafafa;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 40px;
+}
+
+.annotation-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.highlight-list {
+    list-style: none;
+    padding: 0;
+}
+
+.highlight-list li {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 4px solid #ffb400; /* Gold/yellow border to match your portfolio accent */
+    position: relative;
+}
+
+/* Adds a subtle quotation mark aesthetic to the bullet points */
+.highlight-list li::before {
+    content: "“";
+    font-size: 2.5rem;
+    color: #e0e0e0;
+    position: absolute;
+    left: -18px;
+    top: -12px;
+    font-family: serif;
+    line-height: 1;
+}
+
+/* Mobile Adjustments for Annotations */
+@media (max-width: 600px) {
+    .annotation-card {
+        padding: 20px;
+    }
+    
+    .highlight-list li {
+        font-size: 1.05rem;
+    }
+}
