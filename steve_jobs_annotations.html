@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Jobs Annotations - Suresh Pathlavath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="books_style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <main class="library-container">
+        <section class="annotation-card">
+            <div class="annotation-header">
+                <h2 class="book-title">Steve Jobs</h2>
+                <p class="book-author">by Walter Isaacson</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Raw highlights, quotes, and notes captured while reading.</p>
+            </div>
+            
+            <div class="annotation-content">
+                
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 1: Childhood</h3>
+                <ul class="highlight-list">
+                    <li>I love it when you can bring really great design and simple capability to something that doesn’t cost much.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 3: The Dropout</h3>
+                <ul class="highlight-list">
+                    <li>He would stare into their eyeballs, ask some question, and would want a response without the other person averting their eyes.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 6: The Apple II</h3>
+                <ul class="highlight-list">
+                    <li>Jobs’s father had once taught him that a drive for perfection meant caring about the craftsmanship even of the parts unseen.</li>
+                    <li>His values were much aligned with mine. He emphasized that you should never start a company with the goal of getting rich. Your goal should be making something you believe in and making a company that will last.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 8: Xerox and Lisa</h3>
+                <ul class="highlight-list">
+                    <li>Good artists copy, great artists steal—and we have always been shameless about stealing great ideas.</li>
+                    <li>Why good execution is as important as good ideas.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 33: Pixar’s Friends</h3>
+                <ul class="highlight-list">
+                    <li>Steve had this firm belief that the right kind of building can do great things for a culture.</li>
+                    <li>Creativity comes from spontaneous meetings, from random discussions. You run into someone, you ask what they’re doing, you say ‘Wow,’ and soon you’re cooking up all sorts of ideas.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 35: Round One</h3>
+                <ul class="highlight-list">
+                    <li>He was calm and decisive when in command, but he didn’t seek any notice or acclaim for himself.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 38: The iPad</h3>
+                <ul class="highlight-list">
+                    <li>For him, that voice had a distinctive set of qualities: simple, declarative, clean.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 39: New Battles</h3>
+                <ul class="highlight-list">
+                    <li>Nothing kills humor like a general and boring truth.</li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
