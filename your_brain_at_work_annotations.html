@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Brain at Work Annotations - Suresh Pathlavath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="books_style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <main class="library-container">
+        <section class="annotation-card">
+            <div class="annotation-header">
+                <h2 class="book-title">Your Brain at Work</h2>
+                <p class="book-author">by David Rock</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Raw highlights, quotes, and notes captured while reading.</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Read Dec'25</p>
+
+            </div>
+            
+            <div class="annotation-content">
+                
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Act I: Problems and Decisions | Scene 1: The Morning Information Overwhelm</h3>
+                <ul class="highlight-list">
+                    <li>Each time you use your mental stage, allocate it to something important.</li>
+                    <li>That’s because prioritizing is one of the brain’s most energy-hungry processes.</li>
+                    <li>One way to reduce the energy required for processing information is to use visuals, to literally see something in your mind’s eye.</li>
+                    <li>Creating visuals for complex ideas is one way to maximize limited energy resources. Another way involves reducing the load on the prefrontal cortex whenever possible.</li>
+                    <li>Scheduling the most attention-rich tasks when you have a fresh and alert mind.</li>
+                    <li>Learning to say no to mental tasks that are not among your priorities is difficult but very helpful.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Scene 2: A Project That Hurts to Think About</h3>
+                <ul class="highlight-list">
+                    <li>Relational complexity studies show over and again that the fewer variables you have to hold in mind, the more effective you are at making decisions.</li>
+                    <li>Working memory is always either visuospatial or auditory, and the former is much more efficient.</li>
+                    <li>If you have a decision to make, the most efficient number of variables is likely to be two: Should I turn left or right? If you have to hold more information in mind, try to limit ideas to three or four at once.</li>
+                    <li>Insights happen when people think globally and widely rather than focusing on the details.</li>
+                    <li>Trying to change other people’s thinking appears to be one of the hardest tasks in the world. While the easy answer may seem to be to give people feedback, real change happens when people see things they have not seen before. The best way to help someone see something new is to help quiet her mind so that she can have a moment of insight. As you have insights, you change your brain, and by changing your brain you change your whole world.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Scene 14: The Culture That Needs to Transform</h3>
+                <ul class="highlight-list">
+                    <li>In this way, great leaders are often humble leaders, thereby reducing the status threat.</li>
+                    <li>Great leaders provide clear expectations and talk a lot about the future, helping to increase certainty.</li>
+                    <li>A good story creates complex maps in the brain as people hold different characters and events on the stage.</li>
+                    <li>The trouble is, because problems come to mind so much easier than solutions, people are always setting away goals instead of toward goals.</li>
+                    <li>Also, problems are more certain than unknown solutions, and the brain naturally steers toward certainty.</li>
+                    <li>Practice using solution-focused questions that focus people’s attention directly on the specific circuits you want to bring to life.</li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

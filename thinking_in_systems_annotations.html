@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking in Systems Annotations - Suresh Pathlavath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="books_style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <main class="library-container">
+        <section class="annotation-card">
+            <div class="annotation-header">
+                <h2 class="book-title">Thinking in Systems</h2>
+                <p class="book-author">by Donella H. Meadows</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Raw highlights, quotes, and notes captured while reading.</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Read Feb'26 - May'26</p>
+                
+            </div>
+            
+            <div class="annotation-content">
+                
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Introduction: The Systems Lens</h3>
+                <ul class="highlight-list">
+                    <li>As our world continues to change rapidly and become more complex, systems thinking will help us manage, adapt, and see the wide range of choices we have before us.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Part One: System Structure and Behavior | One. The Basics</h3>
+                <ul class="highlight-list">
+                    <li>The best way to deduce the system’s purpose is to watch for a while to see how the system behaves.</li>
+                    <li>A change in purpose changes a system profoundly, even if every element and interconnection remains the same.</li>
+                    <li>All are essential. All interact. All have their roles. But the least obvious part of the system, its function or purpose, is often the most crucial determinant of the system’s behavior.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Part Two: Systems and Us | Three. Why Systems Work So Well</h3>
+                <ul class="highlight-list">
+                    <li>When systems work well, we see a kind of harmony in their functioning.</li>
+                    <li>Resilience is a measure of a system’s ability to survive and persist within a variable environment. The opposite of resilience is brittleness or rigidity.</li>
+                    <li>years, however, Hora prospered, while Tempus became poorer and poorer. That’s because Hora discovered the principle of hierarchy. . . .The watches made by both Hora and Tempus consisted of about one thousand parts each. Tempus put his together in such a way that if he had one partly assembled and had to put it down—to answer...</li>
+                    <li>if there’s an intervention to reduce its self-multiplying power. Reducing the gain around a reinforcing loop—slowing the growth—is usually a more powerful leverage point in systems than strengthening balancing loops, and far more preferable than letting the reinforcing loop run.</li>
+                    <li>Look for leverage points around birth rates, interest rates, erosion rates, “success to the successful” loops, any place where the more you have of something, the more you have the possibility of having more.</li>
+                    <li>Power over the rules is real power.</li>
+                    <li>If you have no idea where to get a purpose, you can listen to the universe.</li>
+                    <li>The higher the leverage point, the more the system will resist changing it—that’s why societies often rub out truly enlightened beings.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Seven. Living in a World of Systems</h3>
+                <ul class="highlight-list">
+                    <li>Before you disturb the system in any way, watch how it behaves.</li>
+                    <li>Remember that hierarchies exist to serve the bottom layers, not the top.</li>
+                    <li>The thing to do, when you don’t know, is not to bluff and not to freeze, but to learn.</li>
+                    <li>What’s appropriate when you’re learning is small steps, constant monitoring, and a willingness to change course as you find out more about where it’s leading.</li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

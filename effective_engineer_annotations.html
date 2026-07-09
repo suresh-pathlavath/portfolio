@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Effective Engineer Annotations - Suresh Pathlavath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="books_style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <main class="library-container">
+        <section class="annotation-card">
+            <div class="annotation-header">
+                <h2 class="book-title">The Effective Engineer</h2>
+                <p class="book-author">by Edmond Lau</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Raw highlights, quotes, and notes captured while reading.</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Nov'25-Dec'25</p>
+
+            </div>
+            
+            <div class="annotation-content">
+                
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Foreword & Introduction</h3>
+                <ul class="highlight-list">
+                    <li>Paul would question the purpose of the project.</li>
+                    <li>In the ensuing years, I’ve come to learn that working more hours isn’t the most effective way to increase output. In fact, working too many hours leads to decreased productivity and burnout.</li>
+                    <li>To be effective engineers, we need to be able to identify which activities produce more impact with smaller time investments.</li>
+                    <li>Effective engineers, therefore, also get things done efficiently.</li>
+                    <li>Effective engineers focus on value and impact—they know how to choose which results to deliver.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Part 1: Adopt the Right Mindsets | 1. Focus on High-Leverage Activities</h3>
+                <ul class="highlight-list">
+                    <li>Leverage is defined by a simple equation. It’s the value, or impact, produced per time invested.</li>
+                    <li>High Output Management, Former Intel CEO Andrew Grove.</li>
+                    <li>As you make your way through this book, constantly keep one lesson in mind: focus on high-leverage activities. This is the single most valuable lesson that I’ve learned in my professional life.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">2. Optimize for Learning</h3>
+                <ul class="highlight-list">
+                    <li>How adopting a growth mindset is a prerequisite for improving our abilities.</li>
+                    <li>Carol Dweck concludes in her book Mindset, written after 20 years of researching people’s self-perceptions and beliefs.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Systems and Automation</h3>
+                <ul class="highlight-list">
+                    <li>Building systems to fail fast can be a very high-leverage activity.</li>
+                    <li>Automating solutions and scripting repetitive tasks reduce our operational burden, providing powerful ways to scale our impact.</li>
+                    <li>Automating the mechanics of a sequence of steps tends to be straightforward and testable. Automating the right decisions to make, particularly in the context of building systems that can heal and repair themselves when things go wrong, turns out to be much more challenging.</li>
+                    <li>Automation can produce diminishing returns as you move from automating mechanics to automating decision-making.</li>
+                    <li>The best defense against major unexpected failures is to fail often.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">10. Invest in Your Team’s Growth</h3>
+                <ul class="highlight-list">
+                    <li>Wong firmly believes the secret to your own career success is to “focus primarily on making everyone around you succeed.”</li>
+                    <li>Happy and productive engineers in turn translate to higher employee retention.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Epilogue</h3>
+                <ul class="highlight-list">
+                    <li>Time is our most finite asset, and leverage—the value we produce per unit time—allows us to direct our time toward what matters most.</li>
+                    <li>We enjoy plenty of leisure activities like traveling, hiking, salsa dancing, and spending time with family and friends without giving any thought to whether they’re high-impact or represent the optimal use of our time—and that’s how it should be. But when it comes to achieving our work and life goals, leverage is a powerful framework for helping us focus on the right things.</li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

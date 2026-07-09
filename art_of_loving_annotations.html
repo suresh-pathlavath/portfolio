@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Loving Annotations - Suresh Pathlavath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="books_style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <main class="library-container">
+        <section class="annotation-card">
+            <div class="annotation-header">
+                <h2 class="book-title">The Art of Loving</h2>
+                <p class="book-author">by Erich Fromm</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Raw highlights, quotes, and notes captured while reading.</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Aug'25-Sep'25</p>
+
+            </div>
+            
+            <div class="annotation-content">
+                
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">I. Is Love an Art?</h3>
+                <ul class="highlight-list">
+                    <li>Most people see the problem of love primarily as that of being loved, rather than that of loving, of one’s capacity to love.</li>
+                    <li>Love is an art.</li>
+                    <li>The process of learning an art can be divided conveniently into two parts: one, the mastery of the theory; the other, the mastery of the practice.</li>
+                    <li>Almost none to learn the art of loving.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">II. The Theory of Love | 1. Love, the Answer to the Problem of Human Existence</h3>
+                <ul class="highlight-list">
+                    <li>Sexual act without love never bridges the gap between two human beings, except momentarily.</li>
+                    <li>Love is primarily giving, not receiving.</li>
+                    <li>The highest expression of potency. In the very act of giving, I experience my strength, my wealth, my power.</li>
+                    <li>Giving is more joyous than receiving, not because it is a deprivation, but because in the act of giving lies the expression of my aliveness.</li>
+                    <li>Love. These are care, responsibility, respect and knowledge.</li>
+                    <li>Responsibility could easily deteriorate into domination and possessiveness, were it not for a third component of love, respect. Respect is not fear and awe; it denotes, in accordance with the root of the word (respicere = to look at), the ability to see a person as he is, to be aware of his unique individuality.</li>
+                    <li>Respect, thus, implies the absence of exploitation.</li>
+                    <li>If I love the other person, I feel one with him or her, but with him as he is, not as I need him to be as an object for my use.</li>
+                    <li>Sadism is...</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">IV. The Practice of Love</h3>
+                <ul class="highlight-list">
+                    <li>...important step in learning concentration is to learn to be alone with oneself without reading, listening to the radio, smoking or drinking. Indeed, to be able to concentrate means to be able to be alone with oneself.</li>
+                    <li>Paradoxically, the ability to be alone is the condition for the ability to love.</li>
+                    <li>I should add here that just as it is important to avoid trivial conversation, it is important to avoid bad company. By bad company I do not refer only to people who are vicious and destructive; one should avoid their company because their orbit is poisonous and depressing.</li>
+                    <li>Love being dependent on the relative absence of narcissism, it requires the development of humility, objectivity and reason.</li>
+                    <li>The practice of the art of loving requires the practice of faith.</li>
+                    <li>Rational faith is rooted in an independent conviction based upon one’s own productive observing and thinking, in spite of the majority’s opinion.</li>
+                    <li>There is no rational faith in power. There is submission to it or, on the part of those who have it, the wish to keep it. While to many power seems to be the most real of all things, the history of man has proved it to be the most unstable of all human achievements.</li>
+                    <li>To love means to commit oneself without guarantee, to give oneself completely in the hope that our love will produce love in the loved person.</li>
+                    <li>If man is to be able to love, he must be put in his supreme place. The economic machine must serve him, rather than he serves it.</li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

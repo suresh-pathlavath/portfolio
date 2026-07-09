@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Annotations - Suresh Pathlavath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="books_style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="brand-name">Suresh Pathlavath</a>
+            <span class="brand-subtitle">Assistant Manager at Flipkart Minutes | IIT Kharagpur’21</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="books.html">Library</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <main class="library-container">
+        <section class="annotation-card">
+            <div class="annotation-header">
+                <h2 class="book-title">Flow</h2>
+                <p class="book-author">by Mihaly Csikszentmihalyi</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Raw highlights, quotes, and notes captured while reading.</p>
+                <p class="library-subtitle" style="margin-top: 10px;">Read Jan'26</p>
+
+            </div>
+            
+            <div class="annotation-content">
+                
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 1: Introduction</h3>
+                <ul class="highlight-list">
+                    <li>The best moments usually occur when a person’s body or mind is stretched to its limits in a voluntary effort to accomplish something difficult and worthwhile</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Overview</h3>
+                <ul class="highlight-list">
+                    <li>In the quest for happiness, partial solutions don’t work.</li>
+                    <li>Everything we experience—joy or pain, interest or boredom—is represented in the mind as information</li>
+                    <li>Only direct control of experience, the ability to derive moment-by-moment enjoyment from everything we do, can overcome the obstacles to fulfillment</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Reclaiming Experience</h3>
+                <ul class="highlight-list">
+                    <li>If values and institutions no longer provide as supportive a framework as they once did, each person must use whatever tools are available to carve out a meaningful, enjoyable life</li>
+                    <li>Gradually become free of societal rewards and learn how to substitute for them rewards that are under one’s own powers.</li>
+                    <li>Power returns to the person when rewards are no longer relegated to outside forces.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Paths of Liberation</h3>
+                <ul class="highlight-list">
+                    <li>Control over consciousness is not simply a cognitive skill. At least as much as intelligence, it requires the commitment of emotions and will</li>
+                    <li>Progress is relatively fast in fields that apply knowledge to the material world, such as physics or genetics. But it is painfully slow when knowledge is to be applied to modify our own habits and desires.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 8: The Conflict between Being Alone and Being with Others</h3>
+                <ul class="highlight-list">
+                    <li>Like anything else that really matters, relationships make us extremely happy when they go well, and very depressed when they don’t work out.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">The Pain of Loneliness</h3>
+                <ul class="highlight-list">
+                    <li>A person who rarely gets bored, who does not constantly need a favorable external environment to enjoy the moment, has passed the test for having achieved a creative life.</li>
+                    <li>But it is difficult to accomplish any of them unless one has earlier acquired the habit of using solitude to good advantage</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Chapter 10: What Meaning Means</h3>
+                <ul class="highlight-list">
+                    <li>What this sense of meaning implies is that people reveal their purposes in action; that their goals are expressed in predictable, consistent, and orderly ways</li>
+                    <li>Someone who is in harmony no matter what he does, no matter what is happening to him, knows that his psychic energy is not being wasted on doubt, regret, guilt, and fear, but is always usefully employed.</li>
+                </ul>
+
+                <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.2rem; color: #333;">Forging Resolve</h3>
+                <ul class="highlight-list">
+                    <li>Detached reflection upon experience, a realistic weighing of options and their consequences, have long been held to be the best approach to a good life.</li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
